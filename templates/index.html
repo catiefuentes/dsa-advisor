@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="/advise" method="post">
+<h4>1) Which courses have you completed?</h4>
+<div class="grid">
+{% for c in codes %}
+<label><input type="checkbox" name="completed" value="{{c}}"> {{c}}</label>
+{% endfor %}
+</div>
+
+<h4>2) Interests (comma‑separated tags)</h4>
+<input type="text" name="interests" placeholder="e.g., ml, gis, viz, databases, governance">
+
+<h4>3) Ask a question (RAG)</h4>
+<input type="text" name="question" placeholder="e.g., What are the graduation requirements?">
+
+<button type="submit">Get Advice</button>
+</form>
+{% endblock %}

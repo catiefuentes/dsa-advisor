@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+<a href="/">← Back</a>
+
+<h4>Summary</h4>
+<p>Completed:
+{% for c in completed %}<span class="pill">{{c}}</span> {% endfor %}
+</p>
+<p>Interests: {% for t in interests %}<span class="pill">{{t}}</span> {% endfor %}</p>
+
+<h4>Degree Audit</h4>
+<ul>
+<li><b>Required done:</b> {{audit.required_done}} </li>
+<li><b>Required missing:</b> {{audit.required_missing}} </li>
+<li><b>PLUS satisfied by:</b> {{audit.plus_done}} {% if audit.plus_missing %}(need one of: {{audit.plus_missing}}){% endif %}</li>
+<li><b>Electives taken:</b> {{audit.electives_taken}} </li>
+<li><b>Credits → Required:</b> {{audit.required_credits}} | <b>Electives:</b> {{audit.elective_credits}} | <b>Total:</b> {{audit.total_credits}}</li>
+<li><b>Remaining → Required:</b> {{audit.needs.required_remaining_cr}} | <b>Electives:</b> {{audit.needs.electives_remaining_cr}} | <b>Program:</b> {{audit.needs.program_remaining_cr}}</li>
+</ul>
+
+<h4>Suggested Next Courses</h4>
+<ol>
+{% for s in suggestions %}
+<li>
+<b>{{s.code}}</b> — {{s.title}} ({{s.credits}} cr)
+{% if s.priority == 1 %}<span class="pill">priority: required/PLUS</span>{% endif %}
+{% if s.match %}<span class="pill">interest match: {{s.match}}</span>{% endif %}
+</li>
+{% endfor %}
+</ol>
+
+{% if rag_answer %}
+<h4>RAG Answer</h4>
+<pre class="small">{{rag_answer.answer}}</pre>
+<details>
+<summary>Show retrieved context</summary>
+<pre class="small">{{rag_answer.context}}</pre>
+</details>
+{% endif %}
+{% endblock %}

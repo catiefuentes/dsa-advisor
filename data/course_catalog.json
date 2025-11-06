@@ -1,0 +1,57 @@
+[
+    {"code":"CIS 512","title":"Introduction to Data Science and Analytics","credits":3,
+    "bucket":"required","tags":["foundations","python","pandas"],
+    "desc":"Foundational overview of data science workflow, tools, and ethics."},
+    
+    {"code":"CIS 600","title":"Machine Learning for Data Science","credits":3,
+    "bucket":"required","tags":["ml","supervised","unsupervised"],
+    "desc":"Classical ML methods, model selection, evaluation, and pipelines."},
+    
+    {"code":"MAT 646","title":"Intro to Statistics for Data Science","credits":3,
+    "bucket":"required","tags":["stats","probability","inference"],
+    "desc":"Probability, estimation, hypothesis testing, regression for DS."},
+    
+    {"code":"MAT 616","title":"Elements of Math/Programming/CS for DS","credits":3,
+    "bucket":"required","tags":["math","programming","cs"],
+    "desc":"Bridging math/CS/programming prerequisites for success in DS."},
+    
+    {"code":"DSA 688","title":"Experiential Learning in DSA","credits":3,
+    "bucket":"required","tags":["experiential","internship","project"],
+    "desc":"Applied experiential learning or internship in data science."},
+    
+    {"code":"PSM 601","title":"Project Management for Math & Science Pros","credits":3,
+    "bucket":"plus_or_elective","tags":["project management","leadership"],
+    "desc":"Project management principles (scope, schedule, risk, comms)."},
+    
+    {"code":"PSM 602","title":"Professional Communication for STEM","credits":3,
+    "bucket":"plus_only","tags":["communication","professional skills"],
+    "desc":"STEM communication, presentations, collaborative writing."},
+    
+    {"code":"DSA 501","title":"Data Oriented Computing and Analytics","credits":3,
+    "bucket":"elective","tags":["python","systems","pipelines"],
+    "desc":"Computational approaches and systems for large‑scale analytics."},
+    
+    {"code":"DSA 650","title":"Data Strategy and Governance","credits":3,
+    "bucket":"elective","tags":["governance","policy","security"],
+    "desc":"Data strategy, stewardship, privacy, quality, and governance."},
+    
+    {"code":"GEG 584","title":"Geospatial Programming","credits":3,
+    "bucket":"elective","tags":["gis","python","spatial"],
+    "desc":"Programming for GIS and spatial analytics in Python."},
+    
+    {"code":"GEG 585","title":"Web Based Mapping","credits":3,
+    "bucket":"elective","tags":["gis","web","mapping"],
+    "desc":"Interactive web maps, data tiles, and spatial web apps."},
+    
+    {"code":"DSA 610","title":"Databases and the DS Information Life","credits":3,
+    "bucket":"elective","tags":["databases","sql","etl"],
+    "desc":"Relational/NoSQL data modeling, SQL, and data lifecycle."},
+    
+    {"code":"HEA 730","title":"Data Visualization and Storytelling","credits":3,
+    "bucket":"elective","tags":["viz","storytelling","communication"],
+    "desc":"Principles and tools for effective data visualization."},
+    
+    {"code":"DSA 587","title":"Topic Course (variable)","credits":3,
+    "bucket":"elective","tags":["topics","special"],
+    "desc":"Rotating topics in data science; content varies by offering."}
+    ]
